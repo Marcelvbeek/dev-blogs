@@ -2,14 +2,13 @@
 With the, still, growing use of mobile devices,  the relevance of fast, responsive website is growing also. In this blogpost I show you an example of how we use images-lazy-loading and the html5-picture element to improve the performance of our images on all devices. I do not go very deep into the technical details. To read more about all the IntersectionObserver and a full implementation-guide; I refer to the links at the bottom of this article.
 
 ## Lazy-loading
-The average user of your websites does not see all the images on a page. Because he does not scroll far enough or immediately clicks through to another page. Loading all images on a page beforehand is therefore often unnecessary. Fortunately we can prevent this with the help of images-lazy-loading. We will not load the images until the images is almost in the viewport of the user. We use a new browser-feature for this: the [IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API). In this blogpost I will show you how we implemented this feature.
+The average user of your websites does not see all the images on a page. Because he does not scroll far enough or immediately clicks through to another page. Loading all images on a page beforehand is therefore often unnecessary. Fortunately we can prevent this with the help of images-lazy-loading. We will not load the images until the images is almost in the viewport of the user. We use a new browser-feature for this: the [IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API). In this blogpost I will show you how we implemented this.
 
 
 ## hoe werkt image-lazy-loading
 With the help of the [Intersection Observer](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) we can recognize if an certain html-element is in the viewport. If this is the case, we will load the images. 
 
 ``` Html
-<!-- more about the picture element later -->
 <picture>
     <!-- Data-srcset and data-src does nothing but is needed for lazy-loading. If the image is in the viewport, the data-srcset/data-src is replaced by the attribute srcset/src. When this is the case the image is loaded. -->
     <source media="(max-width: 768px)" data-srcset="image-768x768.jpg, image-1536x1536.jpg 2x">
