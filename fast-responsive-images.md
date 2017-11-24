@@ -70,6 +70,6 @@ let onIntersection = (entries) => {
 
 ```
 
-[The picture element(1)](https://caniuse.com/#search=picture)
-[The picture element(2)](https://developer.mozilla.org/nl/docs/Web/HTML/Element/picture)
-[More about lazy loading images](http://deanhume.com/home/blogpost/lazy-loading-images-using-intersection-observer/10163)
+- [The picture element(1)](https://caniuse.com/#search=picture)
+- [The picture element(2)](https://developer.mozilla.org/nl/docs/Web/HTML/Element/picture)
+- [More about lazy loading images](http://deanhume.com/home/blogpost/lazy-loading-images-using-intersection-observer/10163)
