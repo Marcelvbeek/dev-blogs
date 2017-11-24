@@ -5,7 +5,7 @@ With the, still, growing use of mobile devices,  the relevance of fast, responsi
 The average user of your websites does not see all the images on a page. Because he does not scroll far enough or immediately clicks through to another page. Loading all images on a page beforehand is therefore often unnecessary. Fortunately we can prevent this with the help of images-lazy-loading. We will not load the images until the images is almost in the viewport of the user. We use a new browser-feature for this: the [IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API). In this blogpost I will show you how we implemented this.
 
 
-## hoe werkt image-lazy-loading
+## How image-lazy-loading works
 With the help of the [Intersection Observer](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) we can recognize if an certain html-element is in the viewport. If this is the case, we will load the images. 
 
 ``` Html
