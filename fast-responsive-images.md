@@ -2,8 +2,6 @@
 With the, still, growing use of mobile devices,  the relevance of fast, responsive website is growing also. In this blogpost I show you an example of how we use images-lazy-loading and the html5-picture element to improve the performance of our images on all devices. I do not go very deep into the technical details. To read more about all the IntersectionObserver and a full implementation-guide; I refer to the links at the bottom of this article.
 
 ## Lazy-loading
-De gemiddelde gebruiker ziet lang niet alle afbeeldingen op een pagina, omdat hij niet ver genoeg scrollt of direct weer doorklikt naar een andere pagina. Het op voorhand laden van alle afbeeldingen op een pagina is dus vaak niet nodig. Gelukkig kunnen we dit voorkomen met behulp van lazy-loading. Hiermee laden we afbeeldingen pas in als een de afbeelding (bijna) in de viewport van de gebruiker is. We gebruiken hiervoor een nieuwe browser-feature: de InterSectionObserver. In deze blog leg ik uit hoe dit werkt.
-
 The average user of your websites does not see all the images on a page. Because he does not scroll far enough or immediately clicks through to another page. Loading all images on a page beforehand is therefore often unnecessary. Fortunately we can prevent this with the help of images-lazy-loading. We will not load the images until the images is almost in the viewport of the user. We use a new browser-feature for this: the [IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API). In this blogpost I will show you how we implemented this feature.
 
 
